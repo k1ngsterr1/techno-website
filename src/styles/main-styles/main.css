@@ -1,0 +1,32 @@
+@import url("https://fonts.cdnfonts.com/css/aquire");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* body .container .main-heading {
+  margin-top: clamp(50px, 5.2083333333vw, 200px);
+}
+* body .container .main-paragraph {
+  width: 43.9666666667%;
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+}
+* body .container .main-paragraph .productive {
+  color: #FDD835;
+}
+* body .container .tools-button {
+  width: clamp(171.5px, 17.8645833333vw, 686px);
+  height: clamp(32.5px, 3.3854166667vw, 130px);
+  margin-top: clamp(32px, 3.3333333333vw, 128px);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: clamp(16px, 1.6666666667vw, 64px);
+  color: #121212;
+  transition: 0.3s all;
+}
+* body .container .tools-button:hover {
+  background-color: #FDD00A;
+}
+* body .effect {
+  position: absolute;
+  left: clamp(700px, 68.75vw, 2800px);
+  z-index: -10;
+  top: -2px;
+}/*# sourceMappingURL=main.css.map */

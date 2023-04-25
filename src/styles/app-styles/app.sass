@@ -16,6 +16,12 @@ $textLabel: clamp(30px,3.125vw,120px)
 $paragraph: clamp(14px,1.4583333333333333vw,56px)
 $buttonFont: clamp(16px,1.6666666666666667vw,64px)
 
+// Margins
+$m16: clamp(8px,0.8333333333333334vw,32px)
+$m32: clamp(16px,1.6666666666666667vw,64px)
+$m64: clamp(32px,3.3333333333333335vw,128px)
+$m128: clamp(64px,6.666666666666667vw,256px)
+
 // Fonts:
 
 @import url('https://fonts.cdnfonts.com/css/aquire')
@@ -30,6 +36,10 @@ $buttonFont: clamp(16px,1.6666666666666667vw,64px)
     body
         font-family: 'Roboto'
         font-style: normal
+        background-color: $black
+        overflow-x: hidden
+        -ms-overflow-style: none
+        scrollbar-width: none
 
         link
             font-family: 'Roboto'
@@ -46,3 +56,62 @@ $buttonFont: clamp(16px,1.6666666666666667vw,64px)
             outline: none
             border: none
             cursor: pointer
+
+        h1
+            font-family: 'Roboto'
+            font-style: normal
+            font-weight: 900
+            font-size: clamp(49px,5.104166666666667vw,196px)
+            text-transform: uppercase
+            color: $white
+
+        h2
+            font-family: 'Roboto'
+            font-style: normal
+            font-weight: 900
+            font-size: $h2
+            text-transform: uppercase
+            color: #FFFFFF
+            margin: auto
+
+        p
+            font-family: 'Roboto'
+            font-style: normal
+            font-weight: 400
+            color: $white
+            font-size: clamp(13px,1.3541666666666667vw,52px)
+
+        img
+            user-drag: none
+            user-select: none
+            -moz-user-select: none
+            -webkit-user-drag: none
+            -webkit-user-select: none
+            -ms-user-select: none
+
+        .container
+            width: 86.45833333333333%
+            // border: 2px solid red
+            display: flex
+            flex-direction: column
+            height: auto
+            margin: auto
+
+        .link
+            font-family: 'Roboto'
+            font-style: normal
+            font-weight: 400
+            color: $white
+            font-size: $navigationFont
+            cursor: pointer
+            text-decoration: none
+
+        .techno
+            font-family: 'Aquire'
+            font-style: normal
+            font-weight: 900
+            font-size: clamp(52.5px,5.46875vw,210px)
+            color: $yellow
+
+    body::-webkit-scrollbar
+        display: none
