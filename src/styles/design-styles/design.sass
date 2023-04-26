@@ -1,0 +1,75 @@
+
+// Colors
+
+$black: #121212
+$gray: #252525
+$yellow: #FDD835
+$white: white
+
+// Fonts Sizes
+
+$navigationFont: clamp(11px,1.1458333333333333vw,44px)
+$mainHeading: clamp(39px,4.0625vw,156px)
+$h1: clamp(24px,2.5vw,96px)
+$h2: clamp(24px,2.5vw,96px)
+$textLabel: clamp(30px,3.125vw,120px)
+$paragraph: clamp(14px,1.4583333333333333vw,56px)
+$buttonFont: clamp(16px,1.6666666666666667vw,64px)
+
+// Margins
+$m16: clamp(8px,0.8333333333333334vw,32px)
+$m32: clamp(16px,1.6666666666666667vw,64px)
+$m64: clamp(32px,3.3333333333333335vw,128px)
+$m128: clamp(64px,6.666666666666667vw,256px)
+
+// Fonts:
+
+@import url('https://fonts.cdnfonts.com/css/aquire')
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+
+*
+    body
+
+        .container
+
+            .design-heading
+                margin-top: $m128
+
+            .cards-container
+                display: flex
+                margin-top: $m128
+                justify-content: space-between
+                align-items: center
+
+                .card-container
+                    width: clamp(229.085px,23.863020833333334vw,916.34px)
+                    height: clamp(229.085px,23.863020833333334vw,916.34px)
+                    display: flex
+                    flex-direction: column
+                    border: 5px solid #252525
+
+                    .card-heading
+                        font-family: 'Roboto'
+                        font-style: normal
+                        font-weight: 900
+                        font-size: clamp(17.5px,1.8229166666666667vw,70px)
+                        color: #FDD835
+
+                    .card-button
+                        width: clamp(164.75px,17.161458333333332vw,659px)
+                        height: clamp(28.82px,3.002083333333333vw,115.28px)
+                        font-family: 'Roboto'
+                        font-style: normal
+                        font-weight: 800
+                        font-size: $m32
+                        color: $black
+                        background-color: $yellow
+                        display: flex
+                        align-items: center
+                        text-decoration: none
+                        justify-content: center
+                        transition: 0.3s all
+                        margin-left: 14%
+                        margin-bottom: $m32
+                        &:hover
+                            background-color: #FDD00A

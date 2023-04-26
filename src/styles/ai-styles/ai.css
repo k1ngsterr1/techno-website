@@ -1,0 +1,60 @@
+@import url("https://fonts.cdnfonts.com/css/aquire");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* body .container .ai-heading {
+  margin-top: clamp(128px, 13.3333333333vw, 512px);
+}
+* body .container .ai-card {
+  margin-top: clamp(64px, 6.6666666667vw, 256px) !important;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: clamp(264.5px, 27.5520833333vw, 1058px);
+  height: clamp(264.5px, 27.5520833333vw, 1058px);
+  border: 5px solid #252525;
+}
+* body .container .ai-card .gpt-img {
+  width: clamp(90px, 9.375vw, 360px);
+  height: clamp(90px, 9.375vw, 360px);
+  margin-top: clamp(32px, 3.3333333333vw, 128px);
+}
+* body .container .ai-card .gpt-chat {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: clamp(16px, 1.6666666667vw, 64px);
+  margin-top: clamp(32px, 3.3333333333vw, 128px);
+  color: #FDD835;
+}
+* body .container .ai-card .button-link {
+  width: 343px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: clamp(16px, 1.6666666667vw, 64px);
+  background-color: #FDD835;
+  margin: auto;
+  color: #121212;
+  text-decoration: none;
+}
+* body .container .ai-card .button-link:hover {
+  background-color: #FDD00A;
+}
+* body .ai-span {
+  width: 100%;
+  height: clamp(103.5px, 10.78125vw, 414px);
+  margin-top: clamp(64px, 6.6666666667vw, 256px);
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: clamp(39px, 4.0625vw, 156px);
+  align-items: center;
+  background-color: #FDD835;
+}/*# sourceMappingURL=ai.css.map */

@@ -10,7 +10,17 @@
 * body .container .adaptive-container {
   margin-top: clamp(64px, 6.6666666667vw, 256px);
 }
-* body .container .adaptive-container .vw-container {
+* body .container .adaptive-container .calc-containers {
+  margin-top: clamp(32px, 3.3333333333vw, 128px);
+}
+* body .container .adaptive-container .vw-containers, * body .container .adaptive-container .calc-containers {
+  display: flex;
+  justify-content: space-between;
+}
+* body .container .adaptive-container .vw-containers .calc-container, * body .container .adaptive-container .calc-containers .calc-container {
+  height: auto !important;
+}
+* body .container .adaptive-container .vw-containers .vw-container, * body .container .adaptive-container .vw-containers .calc-container, * body .container .adaptive-container .calc-containers .vw-container, * body .container .adaptive-container .calc-containers .calc-container {
   width: 35.4166666667%;
   height: clamp(167px, 17.3958333333vw, 668px);
   display: flex;
@@ -18,7 +28,7 @@
   flex-direction: column;
   border: 5px solid #252525;
 }
-* body .container .adaptive-container .vw-container .vw-heading {
+* body .container .adaptive-container .vw-containers .vw-container .vw-heading, * body .container .adaptive-container .vw-containers .vw-container .calc-heading, * body .container .adaptive-container .vw-containers .calc-container .vw-heading, * body .container .adaptive-container .vw-containers .calc-container .calc-heading, * body .container .adaptive-container .calc-containers .vw-container .vw-heading, * body .container .adaptive-container .calc-containers .vw-container .calc-heading, * body .container .adaptive-container .calc-containers .calc-container .vw-heading, * body .container .adaptive-container .calc-containers .calc-container .calc-heading {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
@@ -26,24 +36,26 @@
   color: #FDD835;
   margin-top: clamp(16px, 1.6666666667vw, 64px);
 }
-* body .container .adaptive-container .vw-container .vw-paragraph {
+* body .container .adaptive-container .vw-containers .vw-container .vw-paragraph, * body .container .adaptive-container .vw-containers .vw-container .calc-paragraph, * body .container .adaptive-container .vw-containers .calc-container .vw-paragraph, * body .container .adaptive-container .vw-containers .calc-container .calc-paragraph, * body .container .adaptive-container .calc-containers .vw-container .vw-paragraph, * body .container .adaptive-container .calc-containers .vw-container .calc-paragraph, * body .container .adaptive-container .calc-containers .calc-container .vw-paragraph, * body .container .adaptive-container .calc-containers .calc-container .calc-paragraph {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: clamp(10px, 1.0416666667vw, 40px);
   margin-top: clamp(16px, 1.6666666667vw, 64px);
 }
-* body .container .adaptive-container .vw-container .vw-input {
+* body .container .adaptive-container .vw-containers .vw-container .vw-input, * body .container .adaptive-container .vw-containers .vw-container .calc-input, * body .container .adaptive-container .vw-containers .calc-container .vw-input, * body .container .adaptive-container .vw-containers .calc-container .calc-input, * body .container .adaptive-container .calc-containers .vw-container .vw-input, * body .container .adaptive-container .calc-containers .vw-container .calc-input, * body .container .adaptive-container .calc-containers .calc-container .vw-input, * body .container .adaptive-container .calc-containers .calc-container .calc-input {
   width: clamp(151px, 15.7291666667vw, 604px);
   height: clamp(20.5px, 2.1354166667vw, 82px);
   border: 2px solid #FDD835;
   border-radius: 82px;
   background-color: transparent;
   color: white;
+  padding-left: clamp(8px, 0.8333333333vw, 32px);
+  font-size: clamp(10px, 1.0416666667vw, 40px);
   outline: none;
   margin-top: clamp(16px, 1.6666666667vw, 64px);
 }
-* body .container .adaptive-container .vw-container .result-container {
+* body .container .adaptive-container .vw-containers .vw-container .result-container, * body .container .adaptive-container .vw-containers .calc-container .result-container, * body .container .adaptive-container .calc-containers .vw-container .result-container, * body .container .adaptive-container .calc-containers .calc-container .result-container {
   width: 100%;
   height: clamp(37px, 3.8541666667vw, 148px);
   display: flex;
@@ -52,13 +64,13 @@
   margin-top: clamp(32px, 3.3333333333vw, 128px);
   background-color: #252525;
 }
-* body .container .adaptive-container .vw-container .result-container .result-container-2 {
+* body .container .adaptive-container .vw-containers .vw-container .result-container .result-container-2, * body .container .adaptive-container .vw-containers .calc-container .result-container .result-container-2, * body .container .adaptive-container .calc-containers .vw-container .result-container .result-container-2, * body .container .adaptive-container .calc-containers .calc-container .result-container .result-container-2 {
   width: 95%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-* body .container .adaptive-container .vw-container .result-container .result-container-2 .result {
+* body .container .adaptive-container .vw-containers .vw-container .result-container .result-container-2 .result, * body .container .adaptive-container .vw-containers .calc-container .result-container .result-container-2 .result, * body .container .adaptive-container .calc-containers .vw-container .result-container .result-container-2 .result, * body .container .adaptive-container .calc-containers .calc-container .result-container .result-container-2 .result {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
@@ -66,8 +78,12 @@
   font-size: clamp(14px, 1.4583333333vw, 56px);
   color: #FDD835;
 }
-* body .container .adaptive-container .vw-container .result-container .result-container-2 .fill-copy {
+* body .container .adaptive-container .vw-containers .vw-container .result-container .result-container-2 .fill-copy, * body .container .adaptive-container .vw-containers .calc-container .result-container .result-container-2 .fill-copy, * body .container .adaptive-container .calc-containers .vw-container .result-container .result-container-2 .fill-copy, * body .container .adaptive-container .calc-containers .calc-container .result-container .result-container-2 .fill-copy {
   font-size: 24px;
   cursor: pointer;
   color: #FDD835;
+  transition: 0.3s all;
+}
+* body .container .adaptive-container .vw-containers .vw-container .result-container .result-container-2 .fill-copy:hover, * body .container .adaptive-container .vw-containers .calc-container .result-container .result-container-2 .fill-copy:hover, * body .container .adaptive-container .calc-containers .vw-container .result-container .result-container-2 .fill-copy:hover, * body .container .adaptive-container .calc-containers .calc-container .result-container .result-container-2 .fill-copy:hover {
+  color: #FDD00A;
 }/*# sourceMappingURL=adaptive.css.map */

@@ -42,66 +42,78 @@ $m128: clamp(64px,6.666666666666667vw,256px)
             .adaptive-container
                 margin-top: $m128
 
-                .vw-container
-                    width: 35.416666666666664%
-                    height: clamp(167px,17.395833333333332vw,668px)
+                .calc-containers
+                    margin-top: $m64
+
+                .vw-containers, .calc-containers
                     display: flex
-                    align-items: center
-                    flex-direction: column
-                    border: 5px solid #252525
+                    justify-content: space-between
 
-                    .vw-heading
-                        font-family: 'Roboto'
-                        font-style: normal
-                        font-weight: 900
-                        font-size: $paragraph
-                        color: $yellow
-                        margin-top: $m32
+                    .calc-container
+                        height: auto !important
 
-                    .vw-paragraph
-                        font-family: 'Roboto'
-                        font-style: normal
-                        font-weight: 500
-                        font-size: clamp(10px,1.0416666666666667vw,40px)
-                        margin-top: $m32
-
-                    .vw-input
-                        width: clamp(151px,15.729166666666666vw,604px)
-                        height: clamp(20.5px,2.1354166666666665vw,82px)
-                        border: 2px solid #FDD835
-                        border-radius: 82px
-                        background-color: transparent
-                        color: white
-                        outline: none
-                        margin-top: $m32
-
-                    .result-container
-                        width: 100%
-                        height: clamp(37px,3.8541666666666665vw,148px)
+                    .vw-container, .calc-container
+                        width: 35.416666666666664%
+                        height: clamp(167px,17.395833333333332vw,668px)
                         display: flex
                         align-items: center
-                        justify-content: center
-                        margin-top: $m64
-                        background-color: #252525
+                        flex-direction: column
+                        border: 5px solid #252525
 
-                        .result-container-2
-                            width: 95%
+                        .vw-heading, .calc-heading
+                            font-family: 'Roboto'
+                            font-style: normal
+                            font-weight: 900
+                            font-size: $paragraph
+                            color: $yellow
+                            margin-top: $m32
+
+                        .vw-paragraph, .calc-paragraph
+                            font-family: 'Roboto'
+                            font-style: normal
+                            font-weight: 500
+                            font-size: clamp(10px,1.0416666666666667vw,40px)
+                            margin-top: $m32
+
+                        .vw-input, .calc-input
+                            width: clamp(151px,15.729166666666666vw,604px)
+                            height: clamp(20.5px,2.1354166666666665vw,82px)
+                            border: 2px solid #FDD835
+                            border-radius: 82px
+                            background-color: transparent
+                            color: white
+                            padding-left: $m16
+                            font-size: clamp(10px,1.0416666666666667vw,40px)
+                            outline: none
+                            margin-top: $m32
+
+                        .result-container
+                            width: 100%
+                            height: clamp(37px,3.8541666666666665vw,148px)
                             display: flex
                             align-items: center
-                            justify-content: space-between
+                            justify-content: center
+                            margin-top: $m64
+                            background-color: #252525
 
-                            .result
-                                font-family: 'Roboto'
-                                font-style: normal
-                                font-weight: 900
-                                margin: auto !important
-                                font-size: $paragraph
-                                color: $yellow
+                            .result-container-2
+                                width: 95%
+                                display: flex
+                                align-items: center
+                                justify-content: space-between
 
-                            .fill-copy
-                                font-size: 24px
-                                cursor: pointer
-                                color: $yellow
-                                transition: 0.3s all
-                                &:hover
-                                    color:
+                                .result
+                                    font-family: 'Roboto'
+                                    font-style: normal
+                                    font-weight: 900
+                                    margin: auto !important
+                                    font-size: $paragraph
+                                    color: $yellow
+
+                                .fill-copy
+                                    font-size: 24px
+                                    cursor: pointer
+                                    color: $yellow
+                                    transition: 0.3s all
+                                    &:hover
+                                        color: #FDD00A

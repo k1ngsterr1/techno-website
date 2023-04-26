@@ -1,0 +1,45 @@
+@import url("https://fonts.cdnfonts.com/css/aquire");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* body .container .design-heading {
+  margin-top: clamp(64px, 6.6666666667vw, 256px);
+}
+* body .container .cards-container {
+  display: flex;
+  margin-top: clamp(64px, 6.6666666667vw, 256px);
+  justify-content: space-between;
+  align-items: center;
+}
+* body .container .cards-container .card-container {
+  width: clamp(229.085px, 23.8630208333vw, 916.34px);
+  height: clamp(229.085px, 23.8630208333vw, 916.34px);
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #252525;
+}
+* body .container .cards-container .card-container .card-heading {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: clamp(17.5px, 1.8229166667vw, 70px);
+  color: #FDD835;
+}
+* body .container .cards-container .card-container .card-button {
+  width: clamp(164.75px, 17.1614583333vw, 659px);
+  height: clamp(28.82px, 3.0020833333vw, 115.28px);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: clamp(16px, 1.6666666667vw, 64px);
+  color: #121212;
+  background-color: #FDD835;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  transition: 0.3s all;
+  margin-left: 14%;
+  margin-bottom: clamp(16px, 1.6666666667vw, 64px);
+}
+* body .container .cards-container .card-container .card-button:hover {
+  background-color: #FDD00A;
+}/*# sourceMappingURL=design.css.map */
