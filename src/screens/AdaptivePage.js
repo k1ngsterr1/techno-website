@@ -12,8 +12,10 @@ const AdaptivePage = () => {
         <p className="vw-paragraph">{props.paragraph}</p>
         <input className="vw-input"></input>
         <div className="result-container">
-          <span className="result">{props.result}</span>
-          <AiFillCopy></AiFillCopy>
+          <div className="result-container-2">
+            <span className="result">{props.result}</span>
+            <AiFillCopy className="fill-copy"></AiFillCopy>
+          </div>
         </div>
       </div>
     );
@@ -27,6 +29,7 @@ const AdaptivePage = () => {
           <VwContainer
             heading="Pixels in VW (DESKTOP)"
             paragraph="Convert From px to VW"
+            result="RESULT"
           ></VwContainer>
         </div>
       </div>
