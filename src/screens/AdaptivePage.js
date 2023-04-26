@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import styles from "../styles/adaptive-styles/adaptive.css";
 
@@ -7,12 +7,22 @@ import { AiFillCopy } from "react-icons/ai";
 import Zoom from "react-reveal/Zoom";
 
 const AdaptivePage = () => {
+  const [message, setMessage] = useState("");
+
+  const handleChange = (event) => {
+    setMessage(event.target.value);
+  };
+
   function VwContainer(props) {
     return (
       <div className="vw-container">
         <h3 className="vw-heading">{props.heading}</h3>
         <p className="vw-paragraph">{props.paragraph}</p>
-        <input className="vw-input"></input>
+        <input
+          className="vw-input"
+          onChange={handleChange}
+          value={message}
+        ></input>
         <div className="result-container">
           <div className="result-container-2">
             <span className="result">{props.result}</span>
@@ -51,12 +61,16 @@ const AdaptivePage = () => {
               <VwContainer
                 heading="Pixels in VW (DESKTOP)"
                 paragraph="Convert From px to VW"
-                result="RESULT"
+                result={`clamp:(${message / 2}px,${message * 0.05208}vw,${
+                  message * 2
+                }px)`}
               ></VwContainer>
               <VwContainer
-                heading="Pixels in VW (DESKTOP)"
+                heading="Pixels in VW (PHONE)"
                 paragraph="Convert From px to VW"
-                result="RESULT"
+                result={`clamp:(${message / 2}px,${message * 0.23364}vw,${
+                  message * 2
+                }px)`}
               ></VwContainer>
             </div>
             <div className="calc-containers">
