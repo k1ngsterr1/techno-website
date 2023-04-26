@@ -5,7 +5,6 @@ import styles from "../styles/main-styles/main.css";
 
 import Typewriter from "typewriter-effect";
 
-import LightSpeed from "react-reveal/LightSpeed";
 import Zoom from "react-reveal/Zoom";
 
 import effect from "../assets/effect.png";
