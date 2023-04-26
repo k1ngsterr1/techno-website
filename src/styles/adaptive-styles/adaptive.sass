@@ -34,3 +34,42 @@ $m128: clamp(64px,6.666666666666667vw,256px)
 
             .adaptive-heading
                 margin-top: clamp(128px,13.333333333333334vw,512px)
+
+            .main-content
+                display: flex
+                flex-direction: column
+
+            .adaptive-container
+                margin-top: $m128
+
+                .vw-container
+                    width: 35.416666666666664%
+                    height: clamp(167px,17.395833333333332vw,668px)
+                    display: flex
+                    align-items: center
+                    flex-direction: column
+                    border: 5px solid #252525
+
+                    .vw-heading
+                        font-family: 'Roboto'
+                        font-style: normal
+                        font-weight: 900
+                        font-size: $paragraph
+                        color: $yellow
+                        margin-top: $m32
+
+                    .vw-paragraph
+                        font-family: 'Roboto'
+                        font-style: normal
+                        font-weight: 500
+                        font-size: clamp(10px,1.0416666666666667vw,40px)
+                        margin-top: $m32
+
+                    .vw-input
+                        width: clamp(151px,15.729166666666666vw,604px)
+                        height: 41px
+                        border: 2px solid #FDD835
+                        border-radius: 82px
+                        background-color: transparent
+                        color: white
+                        outline: none

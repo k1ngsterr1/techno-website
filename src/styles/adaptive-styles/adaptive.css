@@ -2,4 +2,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * body .container .adaptive-heading {
   margin-top: clamp(128px, 13.3333333333vw, 512px);
+}
+* body .container .main-content {
+  display: flex;
+  flex-direction: column;
+}
+* body .container .adaptive-container {
+  margin-top: clamp(64px, 6.6666666667vw, 256px);
+}
+* body .container .adaptive-container .vw-container {
+  width: 35.4166666667%;
+  height: clamp(167px, 17.3958333333vw, 668px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 5px solid #252525;
+}
+* body .container .adaptive-container .vw-container .vw-heading {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: clamp(14px, 1.4583333333vw, 56px);
+  color: #FDD835;
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+}
+* body .container .adaptive-container .vw-container .vw-paragraph {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(10px, 1.0416666667vw, 40px);
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+}
+* body .container .adaptive-container .vw-container .vw-input {
+  width: clamp(151px, 15.7291666667vw, 604px);
+  height: 41px;
+  border: 2px solid #FDD835;
+  border-radius: 82px;
+  background-color: transparent;
+  color: white;
+  outline: none;
 }/*# sourceMappingURL=adaptive.css.map */
