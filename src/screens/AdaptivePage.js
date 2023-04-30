@@ -19,6 +19,7 @@ const AdaptivePage = () => {
         <h3 className="vw-heading">{props.heading}</h3>
         <p className="vw-paragraph">{props.paragraph}</p>
         <input
+          autoFocus
           className="vw-input"
           onChange={handleChange}
           value={message}
@@ -61,14 +62,14 @@ const AdaptivePage = () => {
               <VwContainer
                 heading="Pixels in VW (DESKTOP)"
                 paragraph="Convert From px to VW"
-                result={`clamp:(${message / 2}px,${message * 0.05208}vw,${
+                result={`clamp(${message / 2}px,${message * 0.05208}vw,${
                   message * 2
                 }px)`}
               ></VwContainer>
               <VwContainer
                 heading="Pixels in VW (PHONE)"
                 paragraph="Convert From px to VW"
-                result={`clamp:(${message / 2}px,${message * 0.23364}vw,${
+                result={`clamp(${message / 2}px,${message * 0.23364}vw,${
                   message * 2
                 }px)`}
               ></VwContainer>
